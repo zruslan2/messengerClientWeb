@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Чаты</title>
+</head>
+<body>
+    <section class="content">
+        <div class="header"><img src="img/avtor.svg" alt="avtor_icon" class="icon"/><b>Чаты</b></div>
+        <div class="chats">            
+        </div>  
+        <div class="addChatBtn">
+            <div class="addChat">   
+                <img src="img\addChat.svg" alt=""> 
+            </div> 
+        </div>       
+    </section>
+    <div id="myModal" class="modal"> 
+        <div class="modal-content">
+          <div class="header">            
+            <b>Добавить чат</b>
+            <span class="close">&times;</span>
+          </div>
+          <div class="modal-body">
+            <form name = "myForm" action=""class="myForm">
+                <input type="text" name="" id="inpChatName" placeholder="Название чата">
+                <p>Укажите тип чата</p>
+                <p><input type="radio" value="useToUse" checked name="chatType" class="rad"id="utu"/>
+                <label for="utu">Личный</label></p>
+                <p><input type="radio" value="group" name="chatType"class="rad" id="g"/>
+                <label for="g">Груповой</label></p>  
+                <label for="users">Выберите участников чата</label>               
+                <select name="sel" id="users" ></select>    
+                <div class="btn" id="addChatSubmit"><b>Добавить</b></div>                       
+            </form>   
+          </div>          
+        </div>      
+    </div>
+    <script src='script2.js'></script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+:root {
+    --dark-1: #978289;
+    --light-1:#bda2ab;
+    --dark-2:#8c7a65;
+    --light-2:#af997e;
+    --dark-3:#4d5b62;
+    --light-3:#6e828d;
+}
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+input{
+    width: 95%;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+select{
+    width: 95%;    
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.rad{
+    height: 10px;
+    width: auto;
+}
+.content{
+    width: 400px;
+    margin: 0 auto;    
+    padding-bottom: 5px;
+    background-color: #eaf6fe;    
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(#1f313d, #031017);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.chats{
+    width: 80%;
+    margin: 10px auto;
+    overflow: auto;
+    max-height: 400px;
+    overflow: auto;     
+}
+.messages{
+    width: 80%;
+    margin: 10px auto;
+    overflow: auto;
+    max-height: 400px;       
+}
+.messageToSend{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+}
+.my{
+    margin-right: auto;
+    width: 60%;
+    margin-bottom: 7px;
+}
+.someone{
+    margin-left: auto;
+    width: 60%;
+    margin-bottom: 7px;
+}
+.myHeader{
+    background-color: var(--dark-3);
+    color:white;
+    padding: 5px;
+}
+.someoneHeader{
+    background-color: var(--dark-1);
+    color:white;
+    padding: 5px;
+}
+.someoneBody{
+    background-color: var(--light-1);  
+    padding: 5px;  
+}
+.myBody{
+    background-color: var(--light-3);  
+    padding: 5px;  
+}
+.mesImg{
+    width: 96%;   
+    margin: 2%;
+}
+.mesText{
+    width: 96%;   
+    margin: 2%;
+    color:white;
+}
+#messageText{
+    background-color: var(--dark-3);
+    color:white;    
+    border:none;
+    width: 96%;    
+    margin: 0px;
+    resize:none;
+    margin-left: 2%;
+}
+#messageImg{
+    width: 96%;
+    margin-left: 2%;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+.mes{
+    background-color: var(--dark-3);
+    width: 60%;
+}
+#mesIcons{
+    width: 30px;
+    margin-left: 25px;
+}
+#mesIcons:hover{
+    cursor: pointer;
+}
+#file{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.addChatBtn{
+    width: 80%;
+    margin: 10px auto;    
+    overflow: auto;
+    position: relative;  
+    height: 50px;
+}
+.addChatBtn img{
+    width: 40px;
+}
+.chat{
+    background-color: var(--dark-3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+.chat:hover{
+    cursor: pointer;
+}
+.chat b{
+    color:white;
+}
+.addChat{    
+    position: absolute;
+    right:5px;
+    bottom: 5px;    
+}
+.addChat:hover{
+    cursor: pointer;
+}
+.events{
+    width: 80%;
+    margin: 10px auto;
+    max-height: 400px;
+    overflow: auto;
+}
+.event{
+    margin-bottom: 5px;
+}
+.eHeader{
+    background-color: var(--dark-3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    padding: 0 10px;
+}
+.eHeader img{
+    height: 20px;  
+}
+#remove:hover{
+    cursor: pointer;
+}
+.id{
+    display: none;
+}
+.eBody{
+    background-color: var(--light-3);
+    padding: 20px;
+    color:white;
+}
+.eFooter{
+    background-color: var(--dark-3);
+    padding: 10px 10px;    
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.divD{
+    display: flex;
+    align-items: center;
+    margin:5px 0;
+}
+.icon{
+    height: 20px;   
+    padding-right:10px;  
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.btn{
+    background: linear-gradient(#1f313d, #031017);
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+}
+.btn:hover{    
+    box-shadow: 1px 2px 4px 0px rgba(50, 50, 50, 0.77);;
+}
+.btn:active{
+    background: linear-gradient(#031017, #1f313d);
+}
+.addEvent{
+    width: 80%;
+    margin: 10px auto;
+    border-top: 1px solid #1f313d;
+    display: none;
+    opacity: 0;      
+}
+.show{
+    display: inherit;
+    opacity: 1;       
+}
+.description{    
+    width: 98%;
+    height: 70px;
+    resize: none;
+    margin-top: 10px;
+}
+#eventDate{
+    margin-left: 24px;
+}
+.modal{
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;    
+    background-color: rgba(0,0,0,0.4);
+} 
+.modal-content {
+    position: relative;
+    background-color:#eaf6fe;
+    margin: auto;
+    padding: 0;    
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.myForm{
+    width: 80%;
+    margin: 10px auto;
+}
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color:var(--dark-3);
+    color: white;
+}
